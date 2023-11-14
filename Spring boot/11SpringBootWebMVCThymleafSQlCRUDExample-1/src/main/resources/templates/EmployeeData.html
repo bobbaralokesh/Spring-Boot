@@ -1,0 +1,33 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+	<title>Below Data</title>
+</head>
+
+<body>
+	<table>
+		<tr>
+			<th>EMP Id</th>
+			<th>EMP NAME</th>
+			<th>EMP SAL</th>
+			<th>EMP DEP</th>
+			<th>DELETE</th>
+			<th>EDIT</th>
+		</tr>
+
+		<tr th:each="ob:${list}">
+			<td>[[${ob.empid}]]</td>
+			<td>[[${ob.empName}]]</td>
+			<td>[[${ob.empsal}]]</td>
+			<td>[[${ob.empDep}]]</td>
+<td><a href="">DELETE</a> <a href="">EDIT</a></td>
+		</tr>
+
+	</table>
+
+</body>
+
+
+
+
+</html>
